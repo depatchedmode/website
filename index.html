@@ -457,6 +457,10 @@
             font-size: 16px;
         }
 
+        a {
+            color: var(--accent-color);
+        }
+
         /****************************************************************************
         *****************************************************************************
         *****************************************************************************
@@ -622,9 +626,26 @@
 
         .page-footer {
             text-align: center;
-            font-size: 12px;
             padding: 0 40px 132px;
             line-height: 140%;
+            padding: 40px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            margin: 16px;
+        }
+    
+        .social-links a {
+            text-decoration: none;
+        }
+    
+        .social-links svg {
+            vertical-align: middle;
+            margin-right: 4px;
         }
 
     </style>
@@ -698,6 +719,18 @@
     </div>
     <footer class="page-footer">
         <span class="accent-text">Copy anything from this site, if you want. 2023.</span>
+        <div class="social-links">
+            <a  aria-label="Follow WalletUncon on Bluesky" 
+                target="_blank" 
+                href="https://bsky.app/profile/walletuncon.org">
+                Bluesky: @walletuncon.org
+            </a>
+            <a  aria-label="Follow WalletUncon on Twitter / X" 
+                target="_blank" 
+                href="https://twitter.com/WalletUncon">
+                Twitter/X: @WalletUncon
+            </a>
+        </div>
     </footer>
 </body>
 
